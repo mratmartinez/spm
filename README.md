@@ -1,6 +1,6 @@
 # SPM - Simple Package Manager
 
-Philosophy:  
+## Philosophy:  
 - Simple thing  
 - No databases  
 - Ports + Binaries (binaries are not currently supported though)  
@@ -26,7 +26,9 @@ Philosophy:
 - Multiple options:  
   - Install  
   - Search  
-  - Build  
+  - Show package information  
+  - Build only  
+  - Download sources only  
   - Check dependencies  
 - Configurations:  
   - Build options  
