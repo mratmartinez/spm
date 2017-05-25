@@ -1,0 +1,10 @@
+# Check dependencies
+echo Checking...
+echo Checking deptest
+if [ ! -d $IPLACE/deptest ]
+then
+    echo deptest is absent
+    source ${RECIPES}/deptest/full
+else
+    echo deptest is installed!
+fi

@@ -1,0 +1,5 @@
+# We'll build our package
+
+mkdir ${RECIPES}/${PACKAGE}/work
+echo DEPENDENCIEEE > ${RECIPES}/${PACKAGE}/work/DEPTESSST!!
+echo Finished!

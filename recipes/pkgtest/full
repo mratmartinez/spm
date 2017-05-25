@@ -1,0 +1,13 @@
+PACKAGE="pkgtest"
+
+# Check dependencies
+source ${RECIPES}/${PACKAGE}/check
+
+# We should redefine de PACKAGE
+PACKAGE="pkgtest"
+
+# Build the package
+source ${RECIPES}/${PACKAGE}/build
+
+# Installs the package
+source ${RECIPES}/${PACKAGE}/install
