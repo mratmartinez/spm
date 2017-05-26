@@ -1,7 +1,9 @@
 PACKAGE="pkgtest"
 
 # Check dependencies
-source ${PORTS}/${PACKAGE}/check
+source ${PORTS}/${PACKAGE}/deps
+
+CheckDeps
 
 # We should redefine de PACKAGE
 PACKAGE="pkgtest"
