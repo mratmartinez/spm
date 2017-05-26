@@ -1,12 +1,11 @@
-PACKAGE="pkgtest"
+PACKAGE="deptestc"
 
 # Check dependencies
-dependencies=(deptest deptestb)
+dependencies=()
 CheckDeps
-PACKAGE="pkgtest"
 
-# We should redefine the PACKAGE
-PACKAGE="pkgtest"
+# We should redefine the package
+PACKAGE="deptestc"
 
 # Build the package
 source ${PORTS}/${PACKAGE}/build

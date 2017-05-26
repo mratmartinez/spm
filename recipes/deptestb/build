@@ -1,0 +1,5 @@
+# We'll build our package
+
+mkdir ${PORTS}/${PACKAGE}/work
+echo DEPENDENCIEEE > ${PORTS}/${PACKAGE}/work/DEPTESSST!!
+echo Finished!

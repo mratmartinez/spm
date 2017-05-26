@@ -1,7 +1,8 @@
 PACKAGE="deptest"
 
 # Check dependencies
-source ${PORTS}/${PACKAGE}/check
+dependencies=()
+CheckDeps
 
 # We should redefine the package
 PACKAGE="deptest"

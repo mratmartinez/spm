@@ -1,0 +1,5 @@
+# Install this package
+echo Installing!
+mkdir ${IPLACE}/${PACKAGE}
+mv ${PORTS}/${PACKAGE}/work/* ${IPLACE}/${PACKAGE}
+echo Installed!
