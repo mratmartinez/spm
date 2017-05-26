@@ -12,6 +12,23 @@
 
 # This will install all that shit (?
 IPLACE='/home/mrat/Distro/SPM/soft'
-RECIPES='/home/mrat/Distro/SPM/recipes'
+PORTS='/home/mrat/Distro/SPM/recipes'
+FUNCSDIR='/home/mrat/Distro/SPM/scripts'
+OPTION=${1}
+PACKAGE=${2}
 
-source ${RECIPES}/${1}/full
+# Load functions and scripts
+for file in $FUNCSDIR/*.sh
+do
+    source $file
+done
+
+
+case ${OPTION} in
+    install)
+        InstallPKG ${PACKAGE}
+        ;;
+    *)
+        echo $"Usage: $0 {install | search | remove}"
+        ;;
+esac

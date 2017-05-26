@@ -1,13 +1,13 @@
 PACKAGE="deptest"
 
 # Check dependencies
-source ${RECIPES}/${PACKAGE}/check
+source ${PORTS}/${PACKAGE}/check
 
 # We should redefine the package
 PACKAGE="deptest"
 
 # Build the package
-source ${RECIPES}/${PACKAGE}/build
+source ${PORTS}/${PACKAGE}/build
 
 # Installs the package
-source ${RECIPES}/${PACKAGE}/install
+source ${PORTS}/${PACKAGE}/install

@@ -1,5 +1,5 @@
 # We'll build our package
 
-mkdir ${RECIPES}/${PACKAGE}/work
-echo TEST > ${RECIPES}/${PACKAGE}/work/PACKAAAGEEE
+mkdir ${PORTS}/${PACKAGE}/work
+echo TEST > ${PORTS}/${PACKAGE}/work/PACKAAAGEEE
 echo Finished!

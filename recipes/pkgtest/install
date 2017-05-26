@@ -1,5 +1,5 @@
 # Install this package
 echo Installing!
-mkdir $IPLACE/pkgtest
-mv ${RECIPES}/${PACKAGE}/work/* $IPLACE/pkgtest
+mkdir ${IPLACE}/pkgtest
+mv ${PORTS}/${PACKAGE}/work/* ${IPLACE}/pkgtest
 echo Installed!
