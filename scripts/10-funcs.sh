@@ -1,5 +1,10 @@
+function CleanWorks {
+    rm -rfv ${PORTS}/${1}/work
+}
+
 function InstallPKG {
     source ${PORTS}/${1}/full
+    CleanWorks ${1}
 }
 
 function CheckDeps {
@@ -10,7 +15,7 @@ function CheckDeps {
             if [ ! -d ${IPLACE}/${depitem} ]
             then
                 echo ${depitem} is absent
-                source ${PORTS}/${depitem}/full
+                InstallPKG ${depitem}
             else
                 echo ${deptest} is installed!
             fi
