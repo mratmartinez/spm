@@ -1,10 +1,14 @@
 function CleanWorks {
-    rm -rfv ${PORTS}/${1}/work
+    if [ ${1} = "@all" ]
+    then
+        rm -rfv ${PORTS}/*/work
+    else
+        rm -rfv ${PORTS}/${1}/work
+    fi
 }
 
 function InstallPKG {
     source ${PORTS}/${1}/full
-    CleanWorks ${1}
 }
 
 function CheckDeps {

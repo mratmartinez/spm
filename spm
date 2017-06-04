@@ -28,7 +28,10 @@ case ${OPTION} in
     install)
         InstallPKG ${PACKAGE}
         ;;
+    clean)
+        CleanWorks ${PACKAGE}
+        ;;
     *)
-        echo $"Usage: $0 {install | search | remove}"
+        echo $"Usage: $0 {install | search | remove | clean}"
         ;;
 esac
